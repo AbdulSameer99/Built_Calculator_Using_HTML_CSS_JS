@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>New Tab</title>
+</head>
+<body>
+    <!-- <h4>Calculator</h4> -->
+    <div id="main" class="calculator">
+        <form name="myform" class="calculator1">
+            <input  type="text" name="mytext" placeholder="0" id="eee"> <br> <br>
+            <input id="btn" type="button" value="1" onclick="myform.mytext.value+=1">
+            <input id="btn" type="button" value="2" onclick="myform.mytext.value+=2">
+            <input id="btn" type="button" value="3" onclick="myform.mytext.value+=3">
+            <input id="btn" type="button" value="+" onclick="add()"> <br> <br>
+            
+            <input id="btn" type="button" value="4" onclick="myform.mytext.value+=4">
+            <input  id="btn" type="button" value="5" onclick="myform.mytext.value+=5">
+            <input id="btn" type="button" value="6" onclick="myform.mytext.value+=6">
+            <input id="btn" type="button" value="-" onclick="sub()"> <br> <br>
+            
+            <input id="btn" type="button" value="7" onclick="myform.mytext.value+=7">
+            <input id="btn" type="button" value="8" onclick="myform.mytext.value+=8">
+            <input id="btn" type="button" value="9" onclick="myform.mytext.value+=9">
+            <input id="btn" type="button" value="/" onclick="div()"> <br> <br>
+            
+            <input id="btn" type="button" value="C" onclick="myform.mytext.value=''">
+            <input id="btn" type="button" value="0" onclick="myform.mytext.value+=0">
+            <input id="btn" type="button" value="x" onclick="mal()">
+            <input id="btn" type="button" value="=" onclick="myform.mytext.value=eval(myform.mytext.value)"> <br> <br>        
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
